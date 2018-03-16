@@ -11,7 +11,7 @@ def get_page(url):
     buffer = BytesIO()
     c = pycurl.Curl()
     c.setopt(c.URL, url)
-    c.setopt(pycurl.USERPWD, '%s:%s' % ("tkedziora", "Kedziora02!@"))
+    c.setopt(pycurl.USERPWD, '%s:%s' % ("xxxx", "xxx"))
     c.setopt(pycurl.SSL_VERIFYPEER, 0)
     c.setopt(pycurl.SSL_VERIFYHOST, 0)
     c.setopt(c.WRITEDATA, buffer)
@@ -88,7 +88,7 @@ def get_alerts_crit(check_info):
 
 
 def send_to_slack(alerts_to_send):
-    slack_url = "https://hooks.slack.com/services/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"
+    slack_url = "xxxxx"
     payload = {
         'channel': '#nagios_alert_test',
         'username': 'Checki do wystawienia',
